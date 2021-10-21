@@ -1,1 +1,1 @@
-# net-worth
+# Welcome to Net Worth App
