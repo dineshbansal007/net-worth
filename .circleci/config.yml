@@ -30,6 +30,8 @@ jobs:
           command: |
             chmod +x gradlew
             ./gradlew assembleDebug
+      - store_artifacts:
+          path: app/build/outputs/apk/debug
 
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
   release:
@@ -49,6 +51,8 @@ jobs:
           command: |
             chmod +x gradlew
             ./gradlew assembleRelease
+      - store_artifacts:
+          path: app/build/outputs/apk/release
 
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
   test:
